@@ -126,7 +126,7 @@ def load_region_data(file_path=asr_region):
         print(f"Error loading data: {e}")
 
 def load_prov_data(folder=folder_path):
-    prov_hr=pd.read_excel(os.path.join(folder, "provice_healthregion.xlsx"))
+    prov_hr=pd.read_excel('provice_healthregion.xlsx')
     prov_hr['provine_code']=prov_hr['provine_code'].astype(str)
     prov_hr['health_region']=prov_hr['health_region'].astype(str)       
     return prov_hr
@@ -148,6 +148,7 @@ def load_survival_data(file_path=surv_hr):
         return df
     except Exception as e:
         print(f"Error loading data: {e}")
+
 
 
 
