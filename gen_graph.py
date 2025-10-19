@@ -12,7 +12,7 @@ import nbformat
 import os 
 
 #folder = 'data/'
-with open('provinces.geojson'), 'r', encoding='utf-8') as f:
+with open('provinces.geojson', 'r', encoding='utf-8') as f:
     thai_geojson = json.load(f)
 prov_hr=pd.read_excel('provice_healthregion.xlsx')
 prov_hr['provine_code']=prov_hr['provine_code'].astype(str)
@@ -1113,6 +1113,7 @@ if __name__ == "__main__":
     # Load your data into a DataFrame (df)
     # df = pd.read_csv('your_data.csv')
     pass
+
 
 
 
