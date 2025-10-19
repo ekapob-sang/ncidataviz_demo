@@ -5,7 +5,7 @@ from dash import dcc, html, Input, Output, callback
 import traceback
 import plotly.graph_objects as go
 import sys
-sys.path.append(r"H:\My Drive\nci_data_viz\project_file\production")
+#sys.path.append(r"H:\My Drive\nci_data_viz\project_file\production")
 # Try to import custom modules with error handling
 import dash_bootstrap_components as dbc
 import dataloader
@@ -1419,6 +1419,7 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"Error starting app: {e}")
         print("App may already be running. Please restart the kernel if needed.")
+
 
 
 
