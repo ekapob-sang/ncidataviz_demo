@@ -1,0 +1,14 @@
+dash==3.2.0
+dash-bootstrap-components==2.0.4
+Flask==3.1.2
+Jinja2==3.1.6
+joblib==1.5.2
+jsonschema==4.25.1
+nbformat==5.10.4
+numpy==2.3.3
+openpyxl==3.1.5
+pandas==2.3.2
+plotly==6.3.0
+scikit-learn==1.7.2
+scipy==1.16.2
+
