@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 
-folder_path = r"H:\My Drive\nci_data_viz\project_file\data"
+folder_path = "data/"
 os.chdir(folder_path)
 asr_file="asr_th_vol6_11.xlsx"
 asr_age_file="asr_th_vol6_11_agegroup.xlsx"
@@ -148,5 +148,6 @@ def load_survival_data(file_path=surv_hr):
         return df
     except Exception as e:
         print(f"Error loading data: {e}")
+
 
 
