@@ -5,7 +5,7 @@ from dash import dcc, html, Input, Output, callback
 import traceback
 import plotly.graph_objects as go
 import sys
-sys.path.append(r"H:\My Drive\nci_data_viz\project_file\production")
+#sys.path.append(r"H:\My Drive\nci_data_viz\project_file\production")
 # Try to import custom modules with error handling
 import dash_bootstrap_components as dbc
 import dataloader
@@ -52,9 +52,9 @@ def encode_image(image_path):
         print(f"Error encoding image {image_path}: {e}")
         return ""
 
-image_folder = r"H:\My Drive\nci_data_viz\project_file\image"
-image1_path = image_folder + r"\Screenshot 2025-09-30 143934.png"
-image2_path = image_folder + r"\Screenshot 2025-09-30 144008.png"
+#image_folder = r"H:\My Drive\nci_data_viz\project_file\image"
+image1_path = 'Screenshot 2025-09-30 143934.png'
+image2_path =  'Screenshot 2025-09-30 144008.png'
 
 # Encode images
 image1_base64 = encode_image(image1_path)
@@ -1422,6 +1422,7 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"Error starting app: {e}")
         print("App may already be running. Please restart the kernel if needed.")
+
 
 
 
