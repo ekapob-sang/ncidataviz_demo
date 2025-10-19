@@ -11,7 +11,7 @@ import json
 import nbformat
 import os 
 
-folder = r"H:\My Drive\nci_data_viz\project_file\data"
+folder = "data/"
 with open(os.path.join(folder, "provinces.geojson"), 'r', encoding='utf-8') as f:
     thai_geojson = json.load(f)
 prov_hr=pd.read_excel(os.path.join(folder, "provice_healthregion.xlsx"))
@@ -1113,4 +1113,5 @@ if __name__ == "__main__":
     # Load your data into a DataFrame (df)
     # df = pd.read_csv('your_data.csv')
     pass
+
 
